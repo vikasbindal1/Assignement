@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ViewEventCollectionViewCell1" id="gTV-IL-0wX" customClass="ViewEventCollectionViewCell" customModule="Assignment_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYz-T3-mWu" customClass="CardView" customModule="Assignment_IOS" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="124" height="134"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill.badge.minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="imG-SI-PM4">
+                                <rect key="frame" x="22" y="20.5" width="80" height="79"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HJD-og-ZNP"/>
+                                    <constraint firstAttribute="width" constant="80" id="syl-Et-QIz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ho-TZ-hPX">
+                                <rect key="frame" x="8" y="102" width="108" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7Ho-TZ-hPX" secondAttribute="bottom" constant="8" id="7wN-dZ-Tzb"/>
+                            <constraint firstItem="imG-SI-PM4" firstAttribute="top" secondItem="xYz-T3-mWu" secondAttribute="top" constant="20" id="EXJ-Ht-7mL"/>
+                            <constraint firstItem="7Ho-TZ-hPX" firstAttribute="leading" secondItem="xYz-T3-mWu" secondAttribute="leading" constant="8" id="YKf-F6-ukP"/>
+                            <constraint firstItem="imG-SI-PM4" firstAttribute="centerX" secondItem="xYz-T3-mWu" secondAttribute="centerX" id="aWV-Z0-Yqy"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ho-TZ-hPX" secondAttribute="trailing" constant="8" id="v0H-u6-Qhg"/>
+                            <constraint firstAttribute="height" constant="134" id="vi2-d9-fhV"/>
+                            <constraint firstItem="7Ho-TZ-hPX" firstAttribute="top" secondItem="imG-SI-PM4" secondAttribute="bottom" constant="2" id="vqG-Fi-Uly"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.40000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xYz-T3-mWu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="1s4-5H-OjV"/>
+                <constraint firstAttribute="bottom" secondItem="xYz-T3-mWu" secondAttribute="bottom" constant="8" id="HaH-CR-YLI"/>
+                <constraint firstItem="xYz-T3-mWu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="PPD-xG-8IL"/>
+                <constraint firstAttribute="trailing" secondItem="xYz-T3-mWu" secondAttribute="trailing" constant="8" id="cWX-Ic-ugK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="140" height="151"/>
+            <connections>
+                <outlet property="imgUser" destination="imG-SI-PM4" id="luQ-ZQ-mdq"/>
+                <outlet property="lblName" destination="7Ho-TZ-hPX" id="RXZ-N7-3L3"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="147.99107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="person.crop.circle.fill.badge.minus" catalog="system" width="64" height="50"/>
+    </resources>
+</document>

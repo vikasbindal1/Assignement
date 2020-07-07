@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="KGk-i7-Jjw" customClass="ViewEventTableViewCell" customModule="Assignment_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdb-KX-ZEx">
+                        <rect key="frame" x="16" y="0.0" width="316" height="165"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XsB-4N-aaD">
+                                <rect key="frame" x="8" y="8" width="300" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="A81-0w-mKB"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HTK-Rj-RRd">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XsB-4N-aaD" firstAttribute="leading" secondItem="bdb-KX-ZEx" secondAttribute="leading" constant="8" id="Upf-yD-jKB"/>
+                            <constraint firstAttribute="bottom" secondItem="XsB-4N-aaD" secondAttribute="bottom" constant="7" id="gmK-mU-dIn"/>
+                            <constraint firstAttribute="trailing" secondItem="XsB-4N-aaD" secondAttribute="trailing" constant="8" id="jeX-ei-nVh"/>
+                            <constraint firstItem="XsB-4N-aaD" firstAttribute="top" secondItem="bdb-KX-ZEx" secondAttribute="top" constant="8" id="ngk-zX-AcU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="bdb-KX-ZEx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="3SC-wj-tVW"/>
+                    <constraint firstAttribute="bottom" secondItem="bdb-KX-ZEx" secondAttribute="bottom" constant="9" id="8H7-Yi-c24"/>
+                    <constraint firstItem="bdb-KX-ZEx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gs4-Tv-k8S"/>
+                    <constraint firstAttribute="trailing" secondItem="bdb-KX-ZEx" secondAttribute="trailing" constant="16" id="cEJ-59-EUc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="eventCollectionView" destination="XsB-4N-aaD" id="ynj-Zv-Nfz"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="143.30357142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
